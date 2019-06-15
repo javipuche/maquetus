@@ -181,7 +181,7 @@ Maquetus ya incluye algunos helpers:
 {{/markdown}}
 ```
 
-#### Custom Helpers
+#### Custom
 
 `bold.js`
 
