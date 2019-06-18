@@ -6,7 +6,7 @@ const errorMessage = require('./lib/errorMessage')
 
 const isHandlebars = (file) => allowedExtensions.indexOf(extname(file.path).split('.').pop()) >= 0
 
-const handlebars = (options) => {
+const maquetus = (options) => {
     if (!options) {
         return errorMessage('Configure Maquetus options please.')
     }
@@ -42,4 +42,4 @@ const handlebars = (options) => {
     })
 }
 
-module.exports = handlebars
+module.exports = maquetus
