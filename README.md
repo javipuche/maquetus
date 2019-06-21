@@ -200,7 +200,7 @@ module.exports = function(options) {
 
 ### Data
 
-**Importante:** No usar las variables `body` y `page` ya que se usan por maquetus.
+**Importante:** No usar las variables `body`, `root` y `page` ya que se usan por maquetus.
 
 `example.json`
 

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/javipuche/maquetus/compare/v1.0.4...v1.0.5) (2019-06-21)
+
+
+### Bug Fixes
+
+* Normalize file path for windows ([868eeec](https://github.com/javipuche/maquetus/commit/868eeec))
+
+
+
 ### [1.0.4](https://github.com/javipuche/maquetus/compare/v1.0.3...v1.0.4) (2019-06-20)
 
 
