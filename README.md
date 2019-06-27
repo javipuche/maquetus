@@ -181,6 +181,14 @@ Maquetus ya incluye algunos helpers:
 {{/markdown}}
 ```
 
+#### eq
+
+```html
+{{#eq var 'value'}}
+    Print this
+{{/eq}}
+```
+
 #### Custom Helpers
 
 `bold.js`
