@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/javipuche/maquetus/compare/v1.0.7...v1.1.0) (2019-06-27)
+
+
+### Features
+
+* Add eq helper ([521d90f](https://github.com/javipuche/maquetus/commit/521d90f))
+
+
+
 ### [1.0.7](https://github.com/javipuche/maquetus/compare/v1.0.6...v1.0.7) (2019-06-21)
 
 
