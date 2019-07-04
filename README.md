@@ -60,12 +60,13 @@ gulp.task('default', function() {
 
 ## Opciones
 
-| Opción     | Tipo                | Descripción                                                                                                                                                                              |
-| ---------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `layouts`  | `String`            | Ruta que contiene los layouts. Es necesario tener uno llamado `default`.                                                                                                                 |
-| `partials` | `String` o `Object` | Ruta que contiene los partials. Cada partial se registrará en Handelbars con la ruta del archivo. En caso de usar un objeto usará la key del objeto como alias.                          |
-| `helpers`  | `String`            | Ruta que contiene los helpers. Cada helper se registrará en Handelbars con el nombre del archivo.                                                                                        |
-| `data`     | `String`            | Ruta que contiene los data. Los datos del archivo serán accesibles mediante una variable llamada igual que el nombre del archivo. Los archivos pueden ser JSON (`.json`) o YAML (`.yml`) |
+| Opción       | Tipo                | Descripción                                                                                                                                                                              |
+| ------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `layouts`    | `String`            | Ruta que contiene los layouts. Es necesario tener uno llamado `default`.                                                                                                                 |
+| `partials`   | `String` o `Object` | Ruta que contiene los partials. Cada partial se registrará en Handelbars con la ruta del archivo. En caso de usar un objeto usará la key del objeto como alias.                          |
+| `helpers`    | `String`            | Ruta que contiene los helpers. Cada helper se registrará en Handelbars con el nombre del archivo.                                                                                        |
+| `data`       | `String`            | Ruta que contiene los data. Los datos del archivo serán accesibles mediante una variable llamada igual que el nombre del archivo. Los archivos pueden ser JSON (`.json`) o YAML (`.yml`) |
+| `hbsOptions` | `Object`            | Opciones para [Handelbars](https://handlebarsjs.com/reference.html)                                                                                                                      |
 
 ## Ejemplos
 
@@ -142,6 +143,26 @@ layout: post
 {{> partials/subDir/example }} <!-- En caso de estar en un subdirectorio -->
 ```
 
+### Data
+
+**Importante:** No usar las variables `body`, `root` y `page` ya que se usan por maquetus.
+
+`example.json`
+
+```json
+{
+    "name": "Javier Puche",
+    "phone": "666 66 66 66"
+}
+```
+
+`index.hbs`
+
+```html
+<h2>{{ example.name }}</h2>
+<p>{{ example.phone }}</p>
+```
+
 ### Helpers
 
 Maquetus ya incluye algunos helpers:
@@ -189,6 +210,12 @@ Maquetus ya incluye algunos helpers:
 {{/eq}}
 ```
 
+#### concat
+
+```html
+{{> partialExample title=(concat foo bar) }}
+```
+
 #### Custom Helpers
 
 `bold.js`
@@ -204,24 +231,4 @@ module.exports = function(options) {
 
 ```html
 <p>{{#bold}}Lorem ipsum dolor sit amet.{{/bold}}</p>
-```
-
-### Data
-
-**Importante:** No usar las variables `body`, `root` y `page` ya que se usan por maquetus.
-
-`example.json`
-
-```json
-{
-    "name": "Javier Puche",
-    "phone": "666 66 66 66"
-}
-```
-
-`index.hbs`
-
-```html
-<h2>{{ example.name }}</h2>
-<p>{{ example.phone }}</p>
 ```
