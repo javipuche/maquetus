@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/javipuche/maquetus/compare/v1.3.0...v1.4.0) (2019-07-04)
+
+
+### Build System
+
+* Remove unused dependency ([303f27a](https://github.com/javipuche/maquetus/commit/303f27a))
+
+
+### Features
+
+* Now you can define handlebars options ([edce640](https://github.com/javipuche/maquetus/commit/edce640))
+
+
+
 ## [1.3.0](https://github.com/javipuche/maquetus/compare/v1.2.0...v1.3.0) (2019-07-04)
 
 

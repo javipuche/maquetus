@@ -1,6 +1,6 @@
 {
   "name": "maquetus",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A simple flat file generator",
   "main": "index.js",
   "scripts": {
@@ -42,7 +42,6 @@
     "highlight.js": "^9.15.8",
     "js-yaml": "^3.13.1",
     "marked": "^0.6.2",
-    "plugin-error": "^1.0.1",
     "through2": "^3.0.1"
   }
 }
