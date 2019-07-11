@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/javipuche/maquetus/compare/v1.4.0...v1.5.0) (2019-07-11)
+
+
+### Build System
+
+* Update dependencies ([3008c9b](https://github.com/javipuche/maquetus/commit/3008c9b))
+
+
+### Features
+
+* Added notEq helper ([e24e28c](https://github.com/javipuche/maquetus/commit/e24e28c))
+
+
+
 ## [1.4.0](https://github.com/javipuche/maquetus/compare/v1.3.0...v1.4.0) (2019-07-04)
 
 
