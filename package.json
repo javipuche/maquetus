@@ -1,6 +1,6 @@
 {
   "name": "maquetus",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "A simple flat file generator",
   "main": "index.js",
   "scripts": {
@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/javipuche/maquetus#readme",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.3",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^13.0.0",
+    "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "standard-version": "^6.0.1"
   },
@@ -41,7 +41,7 @@
     "handlebars": "^4.1.2",
     "highlight.js": "^9.15.8",
     "js-yaml": "^3.13.1",
-    "marked": "^0.6.2",
+    "marked": "^0.7.0",
     "through2": "^3.0.1"
   }
 }
