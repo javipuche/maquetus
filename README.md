@@ -52,7 +52,22 @@ gulp.task('default', function() {
         layouts: './src/layouts',
         partials: './src/partials',
         helpers: './src/helpers',
-        data: './src/data'
+        data: './src/data',
+        hbsOptions: {
+            explicitPartialContext: true
+        },
+        customHelpers: {
+            test: (a, b, opts) => {
+                if (a === b) {
+                    return opts.fn(this)
+                } else {
+                    return opts.inverse(this)
+                }
+            }
+        },
+        customPartials: {
+            test: () => `<div>test</div>`
+        }
     }))
     .pipe(gulp.dest('./dist'));
 });
@@ -60,13 +75,15 @@ gulp.task('default', function() {
 
 ## Opciones
 
-| Opción       | Tipo                | Descripción                                                                                                                                                                              |
-| ------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `layouts`    | `String`            | Ruta que contiene los layouts. Es necesario tener uno llamado `default`.                                                                                                                 |
-| `partials`   | `String` o `Object` | Ruta que contiene los partials. Cada partial se registrará en Handelbars con la ruta del archivo. En caso de usar un objeto usará la key del objeto como alias.                          |
-| `helpers`    | `String`            | Ruta que contiene los helpers. Cada helper se registrará en Handelbars con el nombre del archivo.                                                                                        |
-| `data`       | `String`            | Ruta que contiene los data. Los datos del archivo serán accesibles mediante una variable llamada igual que el nombre del archivo. Los archivos pueden ser JSON (`.json`) o YAML (`.yml`) |
-| `hbsOptions` | `Object`            | Opciones para [Handelbars](https://handlebarsjs.com/reference.html)                                                                                                                      |
+| Opción           | Tipo                | Descripción                                                                                                                                                                              |
+| ---------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `layouts`        | `String`            | Ruta que contiene los layouts. Es necesario tener uno llamado `default`.                                                                                                                 |
+| `partials`       | `String` o `Object` | Ruta que contiene los partials. Cada partial se registrará en Handelbars con la ruta del archivo. En caso de usar un objeto usará la key del objeto como alias.                          |
+| `helpers`        | `String`            | Ruta que contiene los helpers. Cada helper se registrará en Handelbars con el nombre del archivo.                                                                                        |
+| `data`           | `String`            | Ruta que contiene los data. Los datos del archivo serán accesibles mediante una variable llamada igual que el nombre del archivo. Los archivos pueden ser JSON (`.json`) o YAML (`.yml`) |
+| `hbsOptions`     | `Object`            | Opciones para [Handelbars](https://handlebarsjs.com/reference.html)                                                                                                                      |
+| `customHelpers`  | `Object`            | Regístrar helpers programáticamente.                                                                                                                                                     |
+| `customPartials` | `Object`            | Regístrar partials programáticamente.                                                                                                                                                    |
 
 ## Ejemplos
 
