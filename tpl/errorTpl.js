@@ -1,4 +1,4 @@
-const errorTpl = (err) => `
+const errorTpl = (err, file) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -39,6 +39,7 @@ const errorTpl = (err) => `
     <body>
         <div class="container">
             <h1>Maquetus error:</h1>
+            <p>${file}</p>
             <pre><code>${err}</code></pre>
         </div>
     </body>
