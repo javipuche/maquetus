@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.3](https://github.com/javipuche/maquetus/compare/v1.6.2...v1.6.3) (2019-08-01)
+
 ### [1.6.2](https://github.com/javipuche/maquetus/compare/v1.6.1...v1.6.2) (2019-07-31)
 
 
