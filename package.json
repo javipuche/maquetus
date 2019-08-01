@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/javipuche/maquetus#readme",
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-config-standard": "^13.0.0",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
-    "standard-version": "^6.0.1"
+    "standard-version": "^7.0.0"
   },
   "dependencies": {
     "colors": "^1.3.3",
@@ -39,7 +39,7 @@
     "front-matter": "^3.0.2",
     "glob": "^7.1.4",
     "handlebars": "^4.1.2",
-    "highlight.js": "^9.15.8",
+    "highlight.js": "^9.15.9",
     "js-beautify": "^1.10.1",
     "js-yaml": "^3.13.1",
     "marked": "^0.7.0",
