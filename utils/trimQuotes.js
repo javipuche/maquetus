@@ -3,7 +3,8 @@ const trimQuotes = (string) => {
     let match = regexp.exec(string)
 
     while (match !== null) {
-        string = string.replace(match[1], match[1].replace(/\s+/g, ' ').trim())
+        const replacement = `"${match[1].replace(/\s+/g, ' ').trim()}"`
+        string = string.replace(match[0], replacement)
         match = regexp.exec(string)
     }
 
