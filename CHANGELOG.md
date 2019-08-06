@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.5](https://github.com/javipuche/maquetus/compare/v1.6.4...v1.6.5) (2019-08-06)
+
+
+### Build System
+
+* Add changelog config file ([029e4d0](https://github.com/javipuche/maquetus/commit/029e4d0))
+
+
+### Miscellaneous Chores
+
+* Trim between html tags ([8554618](https://github.com/javipuche/maquetus/commit/8554618))
+
 ### [1.6.4](https://github.com/javipuche/maquetus/compare/v1.6.3...v1.6.4) (2019-08-02)
 
 
