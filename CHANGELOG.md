@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.6](https://github.com/javipuche/maquetus/compare/v1.6.5...v1.6.6) (2020-07-08)
+
+
+### Miscellaneous Chores
+
+* Remove trims and update dependencies ([9593fea](https://github.com/javipuche/maquetus/commit/9593feae05af520f9f3695cf4aa86123d712bdd3))
+
 ### [1.6.5](https://github.com/javipuche/maquetus/compare/v1.6.4...v1.6.5) (2019-08-06)
 
 
